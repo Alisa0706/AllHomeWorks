@@ -268,7 +268,7 @@ namespace Переменные3
 
             //Реверс Массива 
 
-            //Console.WriteLine($"Input quantity of elements of array");
+            //Console.WriteLine($"Input quantity of elements of array");nnn
 
             //int A = Convert.ToInt32(Console.ReadLine());
 
