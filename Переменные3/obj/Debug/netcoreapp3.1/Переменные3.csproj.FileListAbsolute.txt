@@ -1,0 +1,16 @@
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\Переменные3.exe
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\Переменные3.deps.json
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\Переменные3.runtimeconfig.json
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\Переменные3.runtimeconfig.dev.json
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\Переменные3.dll
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\Переменные3.pdb
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\AllHomeWorks.dll
+C:\Users\Alisa\source\repos\Методы\Переменные3\bin\Debug\netcoreapp3.1\AllHomeWorks.pdb
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.csprojAssemblyReference.cache
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.AssemblyInfoInputs.cache
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.AssemblyInfo.cs
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.csproj.CoreCompileInputs.cache
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.csproj.CopyComplete
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.dll
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.pdb
+C:\Users\Alisa\source\repos\Методы\Переменные3\obj\Debug\netcoreapp3.1\Переменные3.genruntimeconfig.cache

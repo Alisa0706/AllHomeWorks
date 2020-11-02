@@ -1,0 +1,9 @@
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\bin\Debug\netcoreapp3.1\AllHomeWorks.deps.json
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\bin\Debug\netcoreapp3.1\AllHomeWorks.dll
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\bin\Debug\netcoreapp3.1\AllHomeWorks.pdb
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\obj\Debug\netcoreapp3.1\AllHomeWorks.csprojAssemblyReference.cache
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\obj\Debug\netcoreapp3.1\AllHomeWorks.AssemblyInfoInputs.cache
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\obj\Debug\netcoreapp3.1\AllHomeWorks.AssemblyInfo.cs
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\obj\Debug\netcoreapp3.1\AllHomeWorks.csproj.CoreCompileInputs.cache
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\obj\Debug\netcoreapp3.1\AllHomeWorks.dll
+C:\Users\Alisa\source\repos\Методы\AllHomeWorks\obj\Debug\netcoreapp3.1\AllHomeWorks.pdb
