@@ -266,7 +266,7 @@ namespace Переменные3
 
 
 
-            //Реверс Массива
+            //Реверс Массива 
 
             //Console.WriteLine($"Input quantity of elements of array");
 
