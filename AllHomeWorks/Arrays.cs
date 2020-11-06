@@ -7,26 +7,35 @@ namespace AllHomeWorks
 {
     public class Arrays
     {
-
-        //минимальный элемент массива
-        public static int MinimalElementOfArray(int n)
+        //создание рандомного массива
+        public static int[] RandomArray(int count)
         {
 
-        int[] a;
-        a = new int[n];
+            int[] a;
+            a = new int[count];
+
+
+            Random random = new Random();
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = random.Next(-20, 20);
+            }
+            return a;
+
+        }
+
+
+        //минимальный элемент массива
+        public static int MinimalElementOfArray(int[] a)
+        {
+            //int a[] = { 1, 2, 3, 4 };
+            //int[] a =  {1,2,3,4};
 
             int Min = a[0];
 
-        Random random = new Random();
-
-            for (int i = 0; i<a.Length; i++) 
-            {
-                a[i] = random.Next(-20,20);
-                Console.Write(a[i] + " ");
-            }
-
-    Console.WriteLine();
-            Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
 
             for (int i = 0; i<a.Length; i++)
             {
@@ -42,23 +51,9 @@ namespace AllHomeWorks
 
         //максимальный элемент массива
 
-        public static int MaxElementOfArray(int n)
+        public static int MaxElementOfArray(int[] a)
         {
-            int[] a;
-            a = new int[n];
-
             int Max = a[0];
-
-            Random random = new Random();
-
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] = random.Next(-20, 20);
-                Console.Write(a[i] + " ");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
 
             for (int i = 0; i < a.Length; i++)
             {
@@ -69,98 +64,56 @@ namespace AllHomeWorks
             }
 
             return Max;
-
-
         }
 
         //индекс минимального элемента массива
 
-        static public int IndexOfMinimalEllementOfArray(int n)
+        static public int IndexOfMinimalEllementOfArray(int[]a)
         {
-            int[] a;
-            a = new int[n];
-
-            int MinIndex = a[0];
+           
+            int MinIndex = 0;
+            int min = a[0];
             int j;
-            Random random = new Random();
 
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] = random.Next(-20, 20);
-                Console.Write(a[i] + " ");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
-
-            for (int i = 1; i < a.Length - 1; i++)
-            {
-                for (j = i; j < a.Length; j++)
+                for (j = 0; j < a.Length; j++)
                 {
-                    if (a[j] < a[MinIndex])
+                    if (a[j] < min)
                     {
                         MinIndex = j;
+                        min = a[j];
                     }
                 }
-            }
+            
             return MinIndex;
-
         }
 
         //Индекс максимального элемента массива
 
-        static public int IndexOfMaxElementOfArray(int n)
+        static public int IndexOfMaxElementOfArray(int []a)
         {
-            int[] a;
-            a = new int[n];
-
-            int MaxIndex = a[0];
+            
+            int MaxIndex = 0;
+            int max = a[0];
             int j;
-            Random random = new Random();
 
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] = random.Next(-20, 20);
-                Console.Write(a[i] + " ");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
-
-            for (int i = 1; i < a.Length - 1; i++)
-            {
-                for (j = i; j < a.Length; j++)
+                for (j = 0; j < a.Length; j++)
                 {
                     if (a[j] > a[MaxIndex])
                     {
                         MaxIndex = j;
                     }
                 }
-            }
+            
             return MaxIndex;
-
         }
 
 
 
         //Сумма элементов массива с нечетными индексами
 
-        static public int SummOfEllementsWithOddIndexOfArray(int n)
+        static public int SummOfEllementsWithOddIndexOfArray(int []a)
         {
             int s = 0;
-            int[] a;
-            a = new int[n];
-
-            Random random = new Random();
-
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] = random.Next(-20, 20);
-                Console.Write(a[i] + " ");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
 
             for (int i = 0; i < a.Length; i++)
             {
@@ -180,22 +133,9 @@ namespace AllHomeWorks
 
         //Посчитать количество нечетных элементов массива
 
-        static public int QuantityOfOddElementsOfArray(int n)
+        static public int QuantityOfOddElementsOfArray(int []a)
         {
             int s = 0;
-            int[] a;
-            a = new int[n];
-
-            Random random = new Random();
-
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] = random.Next(-20, 20);
-                Console.Write(a[i] + " ");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
 
             for (int i = 0; i < a.Length; i++)
             {
@@ -212,21 +152,9 @@ namespace AllHomeWorks
 
         //Сделать реверс массива (массив в обратном направлении)
 
-        static public int[] ReverseOfArray(int n)
+        static public int[] ReverseOfArray(int []arr)
         {
-            int[] arr = new int[n];
             int b = arr[0];
-
-            Random random = new Random();
-
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = random.Next(-20, 20);
-                Console.Write(arr[i] + " ");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
 
             for (int i = 0; i < arr.Length / 2; i++)
             {
@@ -238,26 +166,29 @@ namespace AllHomeWorks
             return arr;
         }
 
-        //Сортировка по убыванию Прямой выбор
+        //Поменять местами первую и вторую половину массива, 
+        //например, для массива 1 2 3 4, результат 3 4 1 2,  или для 12345 - 45312.
 
-        static public int[] SelectionBubleFromMaxToMin(int n)
+        static public int[] ChangeHalfsOfArray(int []a)
         {
+            int b = a[0];
+            int c = a[0];
 
-            int[] a;
-            a = new int[n];
-
-            Random random = new Random();
-
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < a.Length / 2; i++)
             {
-                a[i] = random.Next(-20, 20);
-                Console.Write(a[i] + " ");
+                c = a[i];
+                a[i] = a[i + (1 + a.Length) / 2];
+                a[i + (1 + a.Length) / 2] = c;
+
             }
+            return a;
+        }
 
-            Console.WriteLine();
-            Console.WriteLine();
 
+//Сортировка по убыванию пузырек
 
+        static public int[] SelectionBubleFromMaxToMin(int []a)
+        {
 
             for (int i = 0; i < a.Length - 1; i++)
             {
@@ -274,21 +205,11 @@ namespace AllHomeWorks
             return a;
         }
 
-        static public int[] SelectionFromMinToMax(int n)
+        //Сортировка по возрастанию прямой выбор
+
+        static public int[] SelectionFromMinToMax(int []a)
         {
-            int[] a;
-            a = new int[n];
-
-            Random random = new Random();
-
-            for (int i = 0; i < a.Length; i++)
-            {
-                a[i] = random.Next(-20, 20);
-                Console.Write(a[i] + " ");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
+            
 
             for (int i = 0; i < a.Length - 1; i++)
             {
@@ -306,12 +227,8 @@ namespace AllHomeWorks
                 a[i] = a[MinIndex];
                 a[MinIndex] = c;
             }
-
             return a;
 
-
         }
-
-
     }
 }

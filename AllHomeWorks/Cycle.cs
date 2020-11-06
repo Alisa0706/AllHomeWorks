@@ -27,7 +27,7 @@ namespace AllHomeWorks
 
             int[] arr = new int[1000 / a];
             int t = 0;
-            for (int i = 0; i < 1000; i++)
+            for (int i = 1; i <= 1000; i++)
             {
                 if (i % a == 0)
                 {
@@ -138,6 +138,33 @@ namespace AllHomeWorks
             return c;
         }
 
+        // Пользователь вводит целое положительное число, которое является кубом целого числа N.
+        //    Найдите число N методом половинного деления.
+
+        static public int FindN(int a)
+        {
+            int leftBound = 0;
+            int RightBound = a;
+
+            int current = 0;
+
+            while (Math.Pow(current, 3) != a)
+            {
+                current = (leftBound + RightBound) / 2;
+                if (Math.Pow(current, 3) > a)
+                {
+                    RightBound = current;
+                }
+               else
+                {
+                    leftBound = current;
+                }
+            }
+
+            return current;
+        }
+
+
         //Пользователь вводит 1 число. Найти количество нечетных цифр этого числа.
 
         static public int QuantityOffOddDigits(int a)
@@ -180,6 +207,51 @@ namespace AllHomeWorks
 
         }
 
+        //Пользователь вводит целое положительное  число (N). Выведите количество чисел в диапазоне от 1 до N, 
+        //сумма четных цифр которых больше суммы нечетных. 
+        
+        static public int NumbersWithSummEvenDigitsMoreThanOdds(int a)
+        {
+            int b;
+            int Digit;
+
+            int SummEven = 0;
+            int SummOdd = 0;
+
+            int result = 0;
+
+            for (int i = 0; i < a; i++)
+            {
+                b = i;
+                SummEven = 0;
+                SummOdd = 0;
+
+                while (b != 0)
+                {
+                    Digit = b % 10;
+
+                    if (Digit % 2 == 0)
+                    {
+                        SummEven += Digit;
+                    }
+                    else
+                    {
+                        SummOdd += Digit;
+                    }
+                    b /= 10;
+
+                }
+                if (SummEven > SummOdd)
+                {
+                    result++;
+                }
+            }
+            
+            return result;
+        }
+
+
+
         //Пользователь вводит 2 числа.Сообщите, есть ли в написании двух чисел одинаковые цифры. 
         //Например, для пары 123 и 3456789, ответом будет являться “ДА”, а, для пары 500 и 99 - “НЕТ”.
         static public bool IfThereIsSameDigits(int a, int b)
@@ -207,8 +279,6 @@ namespace AllHomeWorks
                 }
                 a = a / 10;
             }
-
-            //if (a == 0)
                 
             return false;
 

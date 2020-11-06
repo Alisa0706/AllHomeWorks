@@ -8,17 +8,80 @@ namespace Переменные3
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine($"Введите a");
+
+            //Console.WriteLine($"Input a");
 
             //int a = Convert.ToInt32(Console.ReadLine());
 
-            //Console.WriteLine($"Введите b");
+            //Console.WriteLine($"Input b");
 
             //int b = Convert.ToInt32(Console.ReadLine());
 
-            //int result = Conditions.Actions_a_and_b(a,b,c);
+            //double result = Variables.SolutionFor(a, b);
 
             //Console.WriteLine(result);
+
+
+
+            //Console.WriteLine($"Input a");
+
+            //int a = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine($"Input b");
+
+            //int b = Convert.ToInt32(Console.ReadLine());
+
+            //int result = Conditions.ActionsAandB(a, b);
+
+            //Console.WriteLine(result);
+
+
+
+            //Пользователь вводит 2 числа (X и Y). Определить какой четверти принадлежит 
+            //точка с координатами (X,Y).
+
+
+            //Console.WriteLine($"Input x");
+
+            //int x = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine($"Input y");
+
+            //int y = Convert.ToInt32(Console.ReadLine());
+
+            //string Result = Conditions.SideOfQuadrant(x, y);
+
+            //Console.WriteLine(Result);
+
+
+            //Пользователь вводит 3 числа (A, B и С). Выведите их в консоль в порядке возрастания.
+
+            //Console.WriteLine($"Input a");
+
+            //int a = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine($"Input b");
+
+            //int b = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine($"Input c");
+
+            //int c = Convert.ToInt32(Console.ReadLine());
+
+            //string Result = Conditions.WrightDigitsFromSmallToLarge(a,b,c);
+
+            //Console.WriteLine(Result);
+
+
+            //Число прописью
+
+            //Console.WriteLine($"Input a");
+
+            //int a = Convert.ToInt32(Console.ReadLine());
+
+            //string Result = Conditions.DigitInLine(a);
+
+            //Console.WriteLine(Result);
 
 
 
@@ -143,6 +206,19 @@ namespace Переменные3
             //Console.WriteLine($"Nod of A and B  = {N}");
 
 
+            // Пользователь вводит целое положительное число, которое является кубом целого числа N.
+            // Найдите число N методом половинного деления.
+
+
+            //Console.WriteLine($"Input A");
+
+            //int A = Convert.ToInt32(Console.ReadLine());
+
+            //int X = Cycle.FindN(A);
+
+            //Console.WriteLine($" = {X}");
+
+
 
             //Пользователь вводит 1 число. Найти количество нечетных цифр этого числа.
 
@@ -171,6 +247,18 @@ namespace Переменные3
 
 
 
+            //Пользователь вводит целое положительное  число (N). Выведите количество чисел в диапазоне от 1 до N, 
+            //сумма четных цифр которых больше суммы нечетных. 
+
+            //Console.WriteLine($"Input A");
+
+            //int A = Convert.ToInt32(Console.ReadLine());
+
+            //int S = Cycle.NumbersWithSummEvenDigitsMoreThanOdds(A);
+
+            //Console.WriteLine($" = {S}");
+
+
 
             //Пользователь вводит 2 числа.Сообщите, есть ли в написании двух чисел одинаковые цифры. 
             //Например, для пары 123 и 3456789, ответом будет являться “ДА”, а, для пары 500 и 99 - “НЕТ”.
@@ -188,15 +276,24 @@ namespace Переменные3
 
             //Console.WriteLine($" = {SameDigits}");
 
+            //создание рандомного массива
 
+            //Console.WriteLine($"Input quantity of elements of array ");
+            //int A = Convert.ToInt32(Console.ReadLine());
+            //int []B = Arrays.RandomArray(A);
+            //Console.WriteLine($"  {string.Join(" ", B)}");
 
             //минимальный элемент массива
 
-            //Console.WriteLine($"Input quantity of elements of array");
+            //Console.WriteLine($" { string.Join(" ", )}");
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            // int A = Convert.ToInt32(Console.ReadLine());
 
-            //int MinElement = Arrays.MinimalElementOfArray(A);
+            //int[] a = { 1, 2, 3, 4 };
+
+            //Console.WriteLine($" { string.Join(" ",a )}");
+
+            //int MinElement = Arrays.MinimalElementOfArray(a);
 
             //Console.WriteLine($"Minimal element of array  = {MinElement}");
 
@@ -206,9 +303,9 @@ namespace Переменные3
             // максимальный элемент массива
 
 
-            //Console.WriteLine($"Input quantity of elements of array");
+            //int[] A = { 1, 2, 3, 4 };
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int MaxElement = Arrays.MaxElementOfArray(A);
 
@@ -219,9 +316,9 @@ namespace Переменные3
             //индекс минимального элемента массива
 
 
-            //Console.WriteLine($"Input quantity of elements of array");
+            //int[] A = { 1, 2, 3, 4 };
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int MinIndex = Arrays.IndexOfMinimalEllementOfArray(A);
 
@@ -230,10 +327,9 @@ namespace Переменные3
 
             //Индекс максимального элемента массива
 
+            //int[] A = { 1, 2, 3, 4 };
 
-            //Console.WriteLine($"Input quantity of elements of array");
-
-            //int A = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int MaxIndex = Arrays.IndexOfMaxElementOfArray(A);
 
@@ -244,9 +340,9 @@ namespace Переменные3
 
             //Сумма элементов массива с нечетными индексами
 
-            //Console.WriteLine($"Input quantity of elements of array");
+            //int[] A = { 1, 2, 3, 4 };
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int Summ = Arrays.SummOfEllementsWithOddIndexOfArray(A);
 
@@ -255,40 +351,49 @@ namespace Переменные3
 
             //Посчитать количество нечетных элементов массива
 
-            //Console.WriteLine($"Input quantity of elements of array");
+            //int[] A = { 1, 2, 3, 4 };
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int Q = Arrays.QuantityOfOddElementsOfArray(A);
 
             //Console.WriteLine($"Quantity of odd elements of array  = {Q}");
 
 
-
-
             //Реверс Массива 
 
-            //Console.WriteLine($"Input quantity of elements of array");nnn
+            //int[] A = { 1, 2, 3, 4 };
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int[] Reverse = Arrays.ReverseOfArray(A);
 
             //for (int i = 0; i < Reverse.Length; i++)
             //{
-
             //    Console.Write(Reverse[i] + " ");
             //}
-            //Console.WriteLine();
 
 
+            //Поменять местами первую и вторую половину массива, 
+            //например, для массива 1 2 3 4, результат 3 4 1 2,  или для 12345 - 45312.
 
-            //Сортировка по убыванию Пузырек
+            //int[] A = { 1, 2, 3, 4 };
 
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
-            //Console.WriteLine($"Input quantity of elements of array");
+            //int[] Change = Arrays.ChangeHalfsOfArray(A);
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            ////for (int i = 0; i < Change.Length; i++)
+            //for (int i = 0; i < Change.Length; i++)
+            //{
+            //    Console.Write(Change[i] + " ");
+            //}
+
+            //Сортировка по убыванию пузырек выбор
+
+            //int[] A = { 1, 5, 7, 4 };
+
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int[] Selection = Arrays.SelectionBubleFromMaxToMin(A);
 
@@ -298,12 +403,15 @@ namespace Переменные3
             //}
 
 
+
+
             //Прямой выбор по возрастанию
 
 
-            //Console.WriteLine($"Input quantity of elements of array");
 
-            //int A = Convert.ToInt32(Console.ReadLine());
+            //int[] A = { 1, 5, 7, 4 };
+
+            //Console.WriteLine($" { string.Join(" ", A)}");
 
             //int[] Selection = Arrays.SelectionFromMinToMax(A);
 
@@ -311,8 +419,6 @@ namespace Переменные3
             //{
             //    Console.Write(Selection[i] + " ");
             //}
-
-
 
 
             //корни квадратного уравнения
@@ -343,14 +449,120 @@ namespace Переменные3
             //    Console.WriteLine($"Нет решений");
             //}
 
-            // Минимальный элемент двумерного массива
+
+            //Минимальный элемент двумерного массива
+
+            //int[,] A =new int[,] { { 1, 5, 7, 4 } ,{1, 2, 3, 4 } };
+            //for (int i = 0; i < A.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < A.GetLength(1); j++)
+            //    {
+            //        Console.Write(A[i,j]+" ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //int MinElement = MultiDimentionalArrays.MinElementOfArray(A);
+
+            //Console.WriteLine($" {MinElement}");
+
+
+            // Максимальный элемент двумерного массива
+
+            //int[,] A = new int[,] { { 1, 5, 7, 4 }, { 1, 2, 3, 4 } };
+            //for (int i = 0; i < A.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < A.GetLength(1); j++)
+            //    {
+            //        Console.Write(A[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //int MaxElement = MultiDimentionalArrays.MaxElementOfArray(A);
+
+            //Console.WriteLine($" {MaxElement}");
+
+
+            //Индекс максимального элемента
+
+            //int[,] A = new int[,] { { 1, 5, 7, 4 }, { 1, 2, 3, 4 } };
+            //for (int i = 0; i < A.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < A.GetLength(1); j++)
+            //    {
+            //        Console.Write(A[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //string MaxIndex = MultiDimentionalArrays.MaxIndexArray(A);
+
+            //Console.WriteLine($" Index of max element of array ({MaxIndex})");
+
+
+            //Индекс минимального элемента
+
+            //int[,] A = new int[,] { { 8, 5, 7, 4 }, { 15, 2, 3, 4 } };
+            //for (int i = 0; i < A.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < A.GetLength(1); j++)
+            //    {
+            //        Console.Write(A[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //string MinIndex = MultiDimentionalArrays.MinIndexArray(A);
+
+            //Console.WriteLine($" Index of min element of array ({MinIndex})");
+
+
+
+            //количество элементов массива, которые больше всех своих соседей одновременно
+
+            int[,] A = new int[,] { { 8, 5, 7, 4 }, { 15, 2, 3, 4 } };
+
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                for (int j = 0; j < A.GetLength(1); j++)
+                {
+                    Console.Write(A[i, j] + " ");
+                }
+                Console.WriteLine();
+
+
+            }
+                int X = MultiDimentionalArrays.QuantityOfElementsArrayThatBiggerThanAllEllementsAround(A);
+                Console.WriteLine($" {X}");
+
+            //Задать массив в консоли и посчитать сумму его эллементов 
+
+            //Console.WriteLine("Input 4 ellements of array");
+            //int[] A = new int[4];
+            //for (int i = 0; i < A.Length; i++)
+            //{
+            //    A[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int s = 0;
+
+            //for (int i = 0; i < A.Length; i++)
+            //{
+            //    s += A[i];
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine($"Summ of elements array {s}");
 
 
 
 
+
+
+
+
+        }
 
 
     }
-
-
 }
